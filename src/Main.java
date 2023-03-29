@@ -91,7 +91,6 @@ static Scanner scan;
                 case 2:
                     System.out.println("today's income so far is $ : " + vm.getIncome());
                     break;
-
                 case 3:
                     vm.emptyIncome();
                     System.out.println("You've just emptied today's income. Now, today's income is $ " + vm.getIncome());

@@ -124,14 +124,14 @@ public class VendingMachine
 
     public void checkInsertedMoney ()
     {
-        while (insertedMoney >= actualPrice) {
             if (insertedMoney >= actualPrice) {
-                printTicket();
-
+                while (insertedMoney >= actualPrice) {
+                    printTicket();
+                }
             } else {
                 System.out.println("Please insert $ " + (actualPrice - insertedMoney) + " more to have a ticket.");
 
             }
-        }
+
     }
 }
